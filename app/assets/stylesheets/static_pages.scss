@@ -1,3 +1,30 @@
-// Place all the styles related to the static_pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "config";
+
+header.navbar {
+  max-height: 50px;
+  border-radius: 0;
+  border: none;
+  background-color: $s-color;
+  border-bottom: 2px solid $p-color;
+  div.container {
+    a.navbar-brand {
+      color: $p-color;
+    }
+    ul.menu {
+      list-style-type: none;
+      li, a {
+        display: inline-block;
+      }
+      li {
+        a {
+          text-decoration: none;
+          line-height: 50px;
+          color: $p-color;
+        }
+        a:hover {
+          
+        }
+      }
+    }
+  }
+}
