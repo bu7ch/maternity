@@ -1,8 +1,11 @@
 @import "config";
 
-body {
-  background-color: #CCC;
+body.background {
+  background-color: #DFDFDF;
+  padding-bottom: 20px;
   main.container {
+    padding: 20px 50px;
     background-color: #fff;
+    box-shadow: 0 0 3px 0 $p-color;
   }
 }

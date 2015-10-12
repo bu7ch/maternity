@@ -6,16 +6,16 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>
-  <body>
+  <body class="background">
     <header class="navbar navbar-inverse">
       <div class="container">
         <a href="/" class="navbar-brand">Kiddizy</a>
         <ul class="menu pull-right">
           <% if user_signed_in? %>
-            <li><%= link_to "Mon compte", edit_user_registration_path %></li> |
+            <li><%= link_to "Mon compte", edit_user_registration_path %></li>
             <li><a data-method="delete" href="/users/sign_out">Déconnexion</a></li>
           <% else %>
-            <li><a href="/users/sign_in">Connexion</a></li> |
+            <li><a href="/users/sign_in">Connexion</a></li>
             <li><a href="/users/sign_up">Inscription</a></li>
           <% end %>
         </ul>

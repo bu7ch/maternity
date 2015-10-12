@@ -17,12 +17,15 @@ header.navbar {
       }
       li {
         a {
+          transition: 0.5s;
+          padding: 0 15px;
           text-decoration: none;
           line-height: 50px;
           color: $p-color;
         }
         a:hover {
-          
+          background-color: $p-color;
+          color: $s-color;
         }
       }
     }
