@@ -1,0 +1,10 @@
+@import "config";
+
+div.row.blog {
+  div.row.article {
+    border: 1px solid #CCC;
+    border-bottom: 2px solid $p-color;
+    padding: 20px;
+    margin: 20px 0;
+  }
+}

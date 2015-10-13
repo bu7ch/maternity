@@ -3,7 +3,7 @@
   <head>
     <title>Kiddizy</title>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,700' rel='stylesheet' type='text/css'>
     <%= csrf_meta_tags %>
   </head>
   <body class="background">
@@ -11,6 +11,7 @@
       <div class="container">
         <a href="/" class="navbar-brand">Kiddizy</a>
         <ul class="menu pull-right">
+          <li><a href="/blogs">Blog</a></li>
           <% if user_signed_in? %>
             <li><%= link_to "Mon compte", edit_user_registration_path %></li>
             <li><a data-method="delete" href="/users/sign_out">Déconnexion</a></li>
@@ -30,5 +31,6 @@
       <% end %>
       <%= yield %>
     </main>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   </body>
 </html>

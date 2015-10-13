@@ -1,0 +1,11 @@
+<div class="row blog">
+  <h1>Listing Blogs</h1>
+    <% @blogs.each do |blog| %>
+      <div class="row article">
+        <h4><%= blog.titre %></h4>
+        <p><%= blog.texte %></p>
+        <%= link_to 'Lire l\'article', blog, class: "btn btn-success" %>
+      </div>
+    <% end %>
+  <%= link_to 'New Blog', new_blog_path %>
+</div>

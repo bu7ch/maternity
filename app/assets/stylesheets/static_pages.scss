@@ -8,7 +8,7 @@ header.navbar {
   border-bottom: 2px solid $p-color;
   div.container {
     a.navbar-brand {
-      color: $p-color;
+      color: #FFF;
     }
     ul.menu {
       list-style-type: none;
@@ -21,11 +21,11 @@ header.navbar {
           padding: 0 15px;
           text-decoration: none;
           line-height: 50px;
-          color: $p-color;
+          color: #FFF;
         }
         a:hover {
           background-color: $p-color;
-          color: $s-color;
+          color: #FFF;
         }
       }
     }
@@ -33,42 +33,98 @@ header.navbar {
 }
 
 main.container {
-  div.row.home-page {
-    div.presentation {
-      margin-bottom: 30px;
+  div.presentation {
+    img.logo {
+      margin-top: 5px;
+      width: 300px;
+    }
+    position: absolute;
+    top:50px;
+    left: 0;
+    width: 100%;
+    background-image: url('bg-img.jpg');
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-position: 50% 10%;
+    background-size: cover;
+    height: 100%;
+    z-index: 2;
+    color: $s-color;
+    margin-bottom: 30px;
+    div.content {
+      position: absolute;
+      bottom: 100px;
+      text-align: center;
+      width: 100%;
+      p.be-parents {
+        font-style: italic;
+      }
       p {
-        font-size: 1.4em;
+        font-family: 'Nunito', sans-serif;
+        font-weight: bold;
+        color: #FFF;
+        font-size: 2.5em;
         margin: 20px 0;
+        text-transform: uppercase;
+        span {
+          color: $s-color;
+        }
+      }
+      button.pink-button {
+        transition: 0.5s;
+        background-color: $s-color;
+        border: 2px solid $p-color;
+        padding: 15px 20px;
+        color: #FFF;
+        font-size: 1.5em;
+      }
+      button.pink-button:hover {
+        background-color: $p-color;
+        color: #FFF;
+        padding: 15px 30px;
       }
     }
-    button.pink-button {
-      transition: 0.5s;
-      background-color: $s-color;
-      border: 2px solid $p-color;
-      padding: 15px 20px;
-      color: $p-color;
-      font-size: 1.5em;
+  }
+  div.row.home-page {
+    div.row.les-pro {
+      margin-top: 650px;
+      h2 {
+        margin-bottom: 40px;
+        font-family: 'Nunito', sans-serif;
+        text-transform: uppercase;
+      }
     }
-    button.pink-button:hover {
-      background-color: $p-color;
-      border: 2px solid $s-color;
-      color: #FFF;
-      padding: 15px 30px;
+    div.pres-video {
+      h2 {
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        font-family: 'Nunito', sans-serif;
+      }
+      z-index: 0;
     }
     div.row.follow {
       h2 {
+        margin-top: 40px;
+        font-family: 'Nunito', sans-serif;
         margin-bottom: 30px;
       }
       a.link {
-        background-color: $s-color;
-        padding: 10px 20px;
+        display: inline-block;
         text-decoration: none;
         transition: 0.5s;
-        color: $p-color;
+        font-size: 1.5em;
+        color: #FFF;
+        border-radius: 50%;
+        line-height: 50px;
+        width: 50px;
+        background-color: $s-color;
+        box-sizing: border-box;
+        border: 2px solid $s-color;
       }
       a.link:hover {
-        background-color: $p-color;
+        background-color: #FFF;
         color: $s-color;
+        border: 2px solid $s-color;
       }
     }
   }
