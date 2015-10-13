@@ -1,11 +1,24 @@
 @import "config";
 
 body.background {
-  background-color: #DFDFDF;
+//  background-color: #DFDFDF;
   padding-bottom: 20px;
+  background-color: #FFF;
   main.container {
     padding: 20px 50px;
-    background-color: #fff;
-    box-shadow: 0 0 3px 0 $p-color;
+//    background-color: #fff;
+//    box-shadow: 0 0 3px 0 $p-color;
   }
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-center {
+  text-align: center;
 }

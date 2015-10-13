@@ -4,6 +4,8 @@
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
     <%= devise_error_messages! %>
 
+    <%= f.radio_button :role, 'parent' %> <%= f.label :role, "Vous êtes parents ?" %>
+    <%= f.radio_button :role, 'pro' %> <%= f.label :role, "Vous êtes pro ?" %>
     <div class="field form-group">
       <%= f.label :first_name %><br />
       <%= f.text_field :first_name, autofocus: true, class: "form-control" %>
@@ -55,7 +57,7 @@
 
   <h3>Supprimer mon compte</h3>
 
-  <p>Unhappy? <%= button_to "Supprimer mon compte", registration_path(resource_name), data: { confirm: "Etes vous sur ?" }, method: :delete, class: "btn btn-danger" %></p>
+  <p><%= button_to "Supprimer mon compte", registration_path(resource_name), data: { confirm: "Etes vous sur ?" }, method: :delete, class: "btn btn-danger" %></p>
 
   <%= link_to "Back", :back, class: "btn btn-warning" %>
 </div>
